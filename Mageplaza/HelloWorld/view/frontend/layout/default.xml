@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/pa
+ge_configuration.xsd">
+	<body>
+
+  		<block class="Mageplaza\HelloWorld\Block\Display" name="helloworld_display" template="Mageplaza_HelloWorld::sayhello.phtml" />
+		<move element="helloworld_display" destination="content.top" />
+		<move element="helloworld_display" destination="page.top" />
+		<move element="helloworld_display" destination="header.panel" />
+			<block class="Mageplaza\HelloWorld\Block\Myown" name="mine" template="Mageplaza_HelloWorld::saysomethin.phtml" />
+		<move element="mine" destination="header.panel" />
+	</body>
+</page>
+
+
+
+
+
