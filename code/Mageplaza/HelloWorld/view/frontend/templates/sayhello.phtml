@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @var \Mageplaza\HelloWorld\Block\Display $block
+ */
+?>
+
+<?php $_className = $block->getCssClass(); ?>
+
+
+<h2 class="aikapni <?= $block->escapeHtmlAttr($_className) ?>">This is Yahya Ammar</h1>
+
+<?php 
+    echo  $this->getMyArg(); 
+    echo $this->getData('my_arg');
+?>
+<h1>Is is printed? </h1>
